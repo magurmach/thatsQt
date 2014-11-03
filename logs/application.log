@@ -1,0 +1,361 @@
+2014-11-03 07:56:30,842 - [INFO] - from play in pool-35-thread-4 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-11-03 07:57:32,411 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 07:57:34,129 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-1 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 07:57:34,351 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6k4c6g0p7 - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:510) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:531) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:485) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:483) ~[na:na]
+	at scala.collection.immutable.List.foreach(List.scala:381) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:483) ~[na:na]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[na:na]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[na:na]
+	at scala.collection.immutable.List.foreach(List.scala:381) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[na:na]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[na:na]
+	at play.api.Play$.start(Play.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) ~[na:na]
+	at scala.util.Success.flatMap(Try.scala:230) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-03 07:57:41,449 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 07:57:41,485 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-1 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 07:57:41,497 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-11-03 08:06:55,610 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:06:55,652 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-1 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:06:55,655 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-11-03 08:11:47,177 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:11:47,211 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-4 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:11:47,214 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2014-11-03 08:15:03,531 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:15:03,563 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-4 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:15:03,566 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2014-11-03 08:16:34,671 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:16:34,707 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-5 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:16:34,716 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2014-11-03 08:17:42,330 - [INFO] - from play in play-internal-execution-context-6 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:17:42,364 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-6 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:17:42,367 - [INFO] - from play in play-internal-execution-context-6 
+Application started (Dev)
+
+2014-11-03 08:22:56,342 - [INFO] - from play in play-internal-execution-context-8 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:22:56,379 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-8 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:22:56,381 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2014-11-03 08:30:41,216 - [INFO] - from play in play-internal-execution-context-9 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:30:41,251 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-9 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:30:41,256 - [INFO] - from play in play-internal-execution-context-9 
+Application started (Dev)
+
+2014-11-03 08:31:19,056 - [INFO] - from play in play-internal-execution-context-10 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:31:19,121 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-10 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:31:19,126 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-11-03 08:32:41,655 - [INFO] - from play in play-internal-execution-context-10 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:32:41,700 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-10 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:32:41,703 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-11-03 08:32:54,575 - [INFO] - from play in play-internal-execution-context-10 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:32:54,603 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-10 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:32:54,607 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-11-03 08:33:12,851 - [INFO] - from play in play-internal-execution-context-10 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:33:12,884 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-10 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:33:12,887 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2014-11-03 08:33:25,971 - [INFO] - from play in play-internal-execution-context-14 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:33:26,008 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-14 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:33:26,012 - [INFO] - from play in play-internal-execution-context-14 
+Application started (Dev)
+
+2014-11-03 08:35:38,034 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:35:38,071 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-15 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:35:38,073 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2014-11-03 08:36:03,598 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:36:03,629 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-15 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:36:03,631 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2014-11-03 08:37:45,765 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:37:45,800 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-15 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:37:45,803 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2014-11-03 08:38:06,167 - [INFO] - from play in play-internal-execution-context-18 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:38:06,199 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-18 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:38:06,206 - [INFO] - from play in play-internal-execution-context-18 
+Application started (Dev)
+
+2014-11-03 08:39:29,870 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:39:29,905 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-19 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:39:29,907 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2014-11-03 08:39:44,882 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:39:44,917 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-19 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:39:44,921 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2014-11-03 08:40:09,460 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:40:09,494 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-19 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:40:09,497 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2014-11-03 08:41:20,750 - [INFO] - from play in play-internal-execution-context-22 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:41:20,785 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-22 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:41:20,789 - [INFO] - from play in play-internal-execution-context-22 
+Application started (Dev)
+
+2014-11-03 08:44:38,372 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:44:38,403 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-23 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:44:38,406 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-03 08:45:23,469 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:45:23,499 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-23 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:45:23,502 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-03 08:45:59,267 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:45:59,303 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-23 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:45:59,305 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-03 08:47:54,017 - [INFO] - from play in play-internal-execution-context-25 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:47:54,048 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-25 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:47:54,051 - [INFO] - from play in play-internal-execution-context-25 
+Application started (Dev)
+
+2014-11-03 08:49:48,413 - [INFO] - from play in play-internal-execution-context-25 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:49:48,447 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-25 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:49:48,449 - [INFO] - from play in play-internal-execution-context-25 
+Application started (Dev)
+
+2014-11-03 08:53:55,295 - [INFO] - from play in play-internal-execution-context-26 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:53:55,325 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-26 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:53:55,327 - [INFO] - from play in play-internal-execution-context-26 
+Application started (Dev)
+
+2014-11-03 08:54:38,198 - [INFO] - from play in play-internal-execution-context-26 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:54:38,217 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-26 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:54:38,219 - [INFO] - from play in play-internal-execution-context-26 
+Application started (Dev)
+
+2014-11-03 08:55:07,702 - [INFO] - from play in play-internal-execution-context-28 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:55:07,741 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-28 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:55:07,744 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-11-03 08:56:06,894 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:56:06,922 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-29 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:56:06,923 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2014-11-03 08:56:36,343 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:56:36,366 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-29 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:56:36,368 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2014-11-03 08:57:15,979 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:57:16,009 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-29 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:57:16,011 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2014-11-03 08:58:35,357 - [INFO] - from play in play-internal-execution-context-31 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 08:58:35,389 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-31 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 08:58:35,391 - [INFO] - from play in play-internal-execution-context-31 
+Application started (Dev)
+
+2014-11-03 09:05:05,269 - [INFO] - from play in play-internal-execution-context-32 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 09:05:05,301 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-32 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 09:05:05,302 - [INFO] - from play in play-internal-execution-context-32 
+Application started (Dev)
+
+2014-11-03 09:05:38,939 - [INFO] - from play in play-internal-execution-context-32 
+database [default] connected at jdbc:h2:mem:play
+
+2014-11-03 09:05:38,959 - [ERROR] - from play.api.db.slick.ddl.TableScanner$ in play-internal-execution-context-32 
+Could not find any classes or table queries for: models.*
+
+2014-11-03 09:05:38,961 - [INFO] - from play in play-internal-execution-context-32 
+Application started (Dev)
+
