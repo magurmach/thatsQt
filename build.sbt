@@ -1,4 +1,4 @@
-name := "activator-play-slick"
+name := "play"
 
 version := "1.0-SNAPSHOT"
 
