@@ -43,7 +43,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
             <i class="fa fa-paper-plane fa-5x"></i>
             <br><br><br><br>
             Take a look at what I have been doing <br>
-            <button class="btn btn-primary btn-flat">Go Here<i class="pull-right fa fa-angle-right"></i></button>
+            <button class="btn btn-primary btn-flat" onclick="window.location='/blog'">Go Here<i class="pull-right fa fa-angle-right"></i></button>
           </div>
       	</div>
       	<div class="span5 block">
@@ -141,10 +141,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 06 03:08:17 BDT 2014
+                  DATE: Thu Nov 06 18:43:16 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/homepage.scala.html
-                  HASH: 7ffddeb685772838f8b952d12f86347b35c7b506
-                  MATRIX: 583->1|646->39|660->45|702->67|730->69|3252->2563|3281->2564|3348->2604|3377->2605|3490->2689|3520->2690|3599->2740|3629->2741|3662->2746|3726->2781|3756->2782|3915->2913|3944->2914
+                  HASH: ef8b46e915f35d1a71bf30c3d0a78530b55d6099
+                  MATRIX: 583->1|646->39|660->45|702->67|730->69|3286->2597|3315->2598|3382->2638|3411->2639|3524->2723|3554->2724|3633->2774|3663->2775|3696->2780|3760->2815|3790->2816|3949->2947|3978->2948
                   LINES: 22->2|26->6|26->6|26->6|27->7|111->91|111->91|115->95|115->95|120->100|120->100|120->100|120->100|121->101|121->101|121->101|123->103|123->103
                   -- GENERATED --
               */

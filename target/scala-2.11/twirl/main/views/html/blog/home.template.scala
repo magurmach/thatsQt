@@ -35,14 +35,18 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
             <div class="sidebar col-md-5 col-sm-12 " style="left: 0px;">
                 <div class="site-info">
                     <div class="primary-info">
-                    <h1>Writer</h1>
-                        <p>A minimal blogging theme to put your content on show. <a href="post.html">Look at the features.</a> </p>
-
-                        <p>Content is king</p>
+                    <div class="side">
+                    	<img src=""""),_display_(/*18.33*/routes/*18.39*/.Assets.at("images/me/profile.png")),format.raw/*18.74*/("""" class="user-icon user-1" alt="user-image">
+                    </div>
+                    <h1>Some Bytes From Me</h1>
+                        <p align="justify">
+                        First time I am into designing and you have to admit, it looks good!
+                        While you keep thinking 'this is nothing but another cute wordpress thing', I keep continuing design something you continue to envy of.
+						</p>
+                        <p>If I can think it, I can design it.</p>
                     </div>
                     <div class="secondary-info">
-
-                        <p><a class="btn btn-writer btn-post" href="#"><i class="entypo-doc-text"></i>Join Us</a> or <a href="#">Share your story</a></p>
+                        <p><a class="btn btn-writer btn-post" href="/"><i class="fa fa-home"></i> Go Home</a></p>
                     </div>
                 </div>
 
@@ -260,10 +264,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
     </div></div>
     
-    <script src=""""),_display_(/*242.19*/routes/*242.25*/.Assets.at("javascripts/jquery.jpanelmenu.min.js")),format.raw/*242.75*/(""""></script>
-	<script src=""""),_display_(/*243.16*/routes/*243.22*/.Assets.at("javascripts/blogmain.js")),format.raw/*243.59*/(""""></script>
+    <script src=""""),_display_(/*246.19*/routes/*246.25*/.Assets.at("javascripts/jquery.jpanelmenu.min.js")),format.raw/*246.75*/(""""></script>
+	<script src=""""),_display_(/*247.16*/routes/*247.22*/.Assets.at("javascripts/blogmain.js")),format.raw/*247.59*/(""""></script>
 	<style id="jPanelMenu-style-master">
-	body"""),format.raw/*245.6*/("""{"""),format.raw/*245.7*/("""width:100%"""),format.raw/*245.17*/("""}"""),format.raw/*245.18*/(""".jPanelMenu,body"""),format.raw/*245.34*/("""{"""),format.raw/*245.35*/("""overflow-x:hidden"""),format.raw/*245.52*/("""}"""),format.raw/*245.53*/("""#jPanelMenu-menu"""),format.raw/*245.69*/("""{"""),format.raw/*245.70*/("""display:block;position:fixed;top:0;left:0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch"""),format.raw/*245.203*/("""}"""),format.raw/*245.204*/(""".jPanelMenu-panel"""),format.raw/*245.221*/("""{"""),format.raw/*245.222*/("""position:static;left:0;top:0;z-index:2;width:100%;min-height:100%;background:rgb(255, 255, 255)"""),format.raw/*245.317*/("""}"""),format.raw/*245.318*/("""</style>
+	body"""),format.raw/*249.6*/("""{"""),format.raw/*249.7*/("""width:100%"""),format.raw/*249.17*/("""}"""),format.raw/*249.18*/(""".jPanelMenu,body"""),format.raw/*249.34*/("""{"""),format.raw/*249.35*/("""overflow-x:hidden"""),format.raw/*249.52*/("""}"""),format.raw/*249.53*/("""#jPanelMenu-menu"""),format.raw/*249.69*/("""{"""),format.raw/*249.70*/("""display:block;position:fixed;top:0;left:0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch"""),format.raw/*249.203*/("""}"""),format.raw/*249.204*/(""".jPanelMenu-panel"""),format.raw/*249.221*/("""{"""),format.raw/*249.222*/("""position:static;left:0;top:0;z-index:2;width:100%;min-height:100%;background:rgb(255, 255, 255)"""),format.raw/*249.317*/("""}"""),format.raw/*249.318*/("""</style>
 
 	</body>
 </html>"""))}
@@ -278,11 +282,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 06 17:13:54 BDT 2014
+                  DATE: Thu Nov 06 18:39:07 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/blog/home.scala.html
-                  HASH: 0510e8498ffa9ba6559a91cae5a827e71311aeee
-                  MATRIX: 584->0|642->33|655->39|702->66|730->68|775->88|788->94|837->123|868->127|11559->10790|11575->10796|11647->10846|11702->10873|11718->10879|11777->10916|11860->10971|11889->10972|11928->10982|11958->10983|12003->10999|12033->11000|12079->11017|12109->11018|12154->11034|12184->11035|12347->11168|12378->11169|12425->11186|12456->11187|12581->11282|12612->11283
-                  LINES: 22->1|25->4|25->4|25->4|26->5|29->8|29->8|29->8|31->10|263->242|263->242|263->242|264->243|264->243|264->243|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245|266->245
+                  HASH: a03dc292c8d38028b22abe4e48b92473e433c5db
+                  MATRIX: 584->0|642->33|655->39|702->66|730->68|775->88|788->94|837->123|868->127|1263->495|1278->501|1334->536|11966->11140|11982->11146|12054->11196|12109->11223|12125->11229|12184->11266|12267->11321|12296->11322|12335->11332|12365->11333|12410->11349|12440->11350|12486->11367|12516->11368|12561->11384|12591->11385|12754->11518|12785->11519|12832->11536|12863->11537|12988->11632|13019->11633
+                  LINES: 22->1|25->4|25->4|25->4|26->5|29->8|29->8|29->8|31->10|39->18|39->18|39->18|267->246|267->246|267->246|268->247|268->247|268->247|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249
                   -- GENERATED --
               */
           
