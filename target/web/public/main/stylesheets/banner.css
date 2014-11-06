@@ -1,0 +1,61 @@
+.postbanner{
+  background: url(../images/blogbackground.jpg) no-repeat center center;
+  padding: 15px;
+  width: 100%;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all, 450ms;
+  -moz-transition: all, 450ms;
+  -o-transition: all, 450ms;
+  transition: all, 450ms;
+}
+
+@media (min-width: 768px) {
+  /* line 1, ../sass/partials/_sidebar.sass */
+  .postbanner {
+    height: 190px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1, ../sass/partials/_sidebar.sass */
+  .postbanner {
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    background-color: whitesmoke;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1, ../sass/partials/_sidebar.sass */
+  .postbanner {
+    height: 250px;
+  }
+}
+
+.postbanner .posttitlebox{
+	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	color: #fff;
+	margin-left:  auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	cursor: default;
+}
+
+.postbanner .posttitlebox .post-title{
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 40px;
+}
+
+.postbanner .posttitlebox .post-subtitle{
+	margin-left: 50px;
+	margin-right: 50px;
+	color: #E0E3E3;
+	font-size: 30px;
+}

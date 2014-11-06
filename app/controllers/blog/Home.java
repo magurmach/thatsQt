@@ -8,4 +8,9 @@ public class Home extends Controller{
 	{
 		return ok(views.html.blog.home.render());
 	}
+	
+	public static Result showPost()
+	{
+		return ok(views.html.blog.post.render());
+	}
 }

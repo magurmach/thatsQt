@@ -1,6 +1,6 @@
 // @SOURCE:/Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/conf/routes
-// @HASH:0deadc384ca9b6784c832c47ca6dad21d8b309af
-// @DATE:Thu Nov 06 03:08:17 BDT 2014
+// @HASH:6ef08b7dc1f6bcbfd3aa65bb453e212196e363e2
+// @DATE:Thu Nov 06 22:53:12 BDT 2014
 
 
 import play.core._
@@ -45,13 +45,20 @@ controllers.Home.index(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Home", "index", Nil,"GET", """ Home page""", Routes.prefix + """"""))
         
 
-// @LINE:10
+// @LINE:12
 private[this] lazy val controllers_blog_Home_home2_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("blog"))))
 private[this] lazy val controllers_blog_Home_home2_invoker = createInvoker(
 controllers.blog.Home.home(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Nil,"GET", """""", Routes.prefix + """blog"""))
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Nil,"GET", """ Blog Pages""", Routes.prefix + """blog"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """blog""","""controllers.blog.Home.home()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:13
+private[this] lazy val controllers_blog_Home_showPost3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("post"))))
+private[this] lazy val controllers_blog_Home_showPost3_invoker = createInvoker(
+controllers.blog.Home.showPost(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "showPost", Nil,"GET", """""", Routes.prefix + """post"""))
+        
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """blog""","""controllers.blog.Home.home()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """post""","""controllers.blog.Home.showPost()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -75,10 +82,18 @@ case controllers_Home_index1_route(params) => {
 }
         
 
-// @LINE:10
+// @LINE:12
 case controllers_blog_Home_home2_route(params) => {
    call { 
         controllers_blog_Home_home2_invoker.call(controllers.blog.Home.home())
+   }
+}
+        
+
+// @LINE:13
+case controllers_blog_Home_showPost3_route(params) => {
+   call { 
+        controllers_blog_Home_showPost3_invoker.call(controllers.blog.Home.showPost())
    }
 }
         

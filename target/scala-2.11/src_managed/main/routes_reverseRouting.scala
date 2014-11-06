@@ -1,6 +1,6 @@
 // @SOURCE:/Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/conf/routes
-// @HASH:0deadc384ca9b6784c832c47ca6dad21d8b309af
-// @DATE:Thu Nov 06 03:08:17 BDT 2014
+// @HASH:6ef08b7dc1f6bcbfd3aa65bb453e212196e363e2
+// @DATE:Thu Nov 06 22:53:12 BDT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -48,17 +48,26 @@ def at(file:String): Call = {
 }
                   
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 package controllers.blog {
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 class ReverseHome {
 
 
-// @LINE:10
+// @LINE:12
 def home(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "blog")
+}
+                        
+
+// @LINE:13
+def showPost(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "post")
 }
                         
 
@@ -111,20 +120,33 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 package controllers.blog.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 class ReverseHome {
 
 
-// @LINE:10
+// @LINE:12
 def home : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.blog.Home.home",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "blog"})
+      }
+   """
+)
+                        
+
+// @LINE:13
+def showPost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.blog.Home.showPost",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "post"})
       }
    """
 )
@@ -169,17 +191,25 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
         
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 package controllers.blog.ref {
 
 
-// @LINE:10
+// @LINE:13
+// @LINE:12
 class ReverseHome {
 
 
-// @LINE:10
+// @LINE:12
 def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.blog.Home.home(), HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Seq(), "GET", """""", _prefix + """blog""")
+   controllers.blog.Home.home(), HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Seq(), "GET", """ Blog Pages""", _prefix + """blog""")
+)
+                      
+
+// @LINE:13
+def showPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.blog.Home.showPost(), HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "showPost", Seq(), "GET", """""", _prefix + """post""")
 )
                       
 

@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                 <div class="home-page-posts animated fadeIn ">
                 <div class="post">
                     <section>
-                        <div class="post-preview col-xs-10  no-gutter">
+                        <div class="post-preview col-xs-12  no-gutter">
 
                         <h2><a href="post.html">A great story never told</a></h2>
                         <p>It was a cold December morning, as I sat out on my porch I decided today was the day. </p>
@@ -282,9 +282,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 06 18:39:07 BDT 2014
+                  DATE: Thu Nov 06 21:59:21 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/blog/home.scala.html
-                  HASH: a03dc292c8d38028b22abe4e48b92473e433c5db
+                  HASH: afadb9cd4d792a3c252ff5a54b9c4bfbdf514f35
                   MATRIX: 584->0|642->33|655->39|702->66|730->68|775->88|788->94|837->123|868->127|1263->495|1278->501|1334->536|11966->11140|11982->11146|12054->11196|12109->11223|12125->11229|12184->11266|12267->11321|12296->11322|12335->11332|12365->11333|12410->11349|12440->11350|12486->11367|12516->11368|12561->11384|12591->11385|12754->11518|12785->11519|12832->11536|12863->11537|12988->11632|13019->11633
                   LINES: 22->1|25->4|25->4|25->4|26->5|29->8|29->8|29->8|31->10|39->18|39->18|39->18|267->246|267->246|267->246|268->247|268->247|268->247|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249
                   -- GENERATED --
