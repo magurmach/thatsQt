@@ -1,6 +1,6 @@
 // @SOURCE:/Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/conf/routes
-// @HASH:0447b2e95a5a2dceb97782ead6396294b41853df
-// @DATE:Sun Nov 02 21:03:06 BDT 2014
+// @HASH:0deadc384ca9b6784c832c47ca6dad21d8b309af
+// @DATE:Thu Nov 06 03:08:17 BDT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -40,6 +40,25 @@ class ReverseAssets {
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
+}
+                        
+
+}
+                          
+}
+                  
+
+// @LINE:10
+package controllers.blog {
+
+// @LINE:10
+class ReverseHome {
+
+
+// @LINE:10
+def home(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "blog")
 }
                         
 
@@ -92,6 +111,30 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:10
+package controllers.blog.javascript {
+import ReverseRouteContext.empty
+
+// @LINE:10
+class ReverseHome {
+
+
+// @LINE:10
+def home : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.blog.Home.home",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "blog"})
+      }
+   """
+)
+                        
+
+}
+              
+}
+        
+
 
 // @LINE:9
 // @LINE:6
@@ -118,6 +161,25 @@ class ReverseAssets {
 // @LINE:6
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
+)
+                      
+
+}
+                          
+}
+        
+
+// @LINE:10
+package controllers.blog.ref {
+
+
+// @LINE:10
+class ReverseHome {
+
+
+// @LINE:10
+def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.blog.Home.home(), HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Seq(), "GET", """""", _prefix + """blog""")
 )
                       
 

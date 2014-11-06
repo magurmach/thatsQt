@@ -7,3 +7,4 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # Home page
 GET     /                           controllers.Home.index()
+GET		/blog						controllers.blog.Home.home()

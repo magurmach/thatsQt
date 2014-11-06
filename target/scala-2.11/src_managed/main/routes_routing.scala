@@ -1,6 +1,6 @@
 // @SOURCE:/Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/conf/routes
-// @HASH:0447b2e95a5a2dceb97782ead6396294b41853df
-// @DATE:Sun Nov 02 21:03:06 BDT 2014
+// @HASH:0deadc384ca9b6784c832c47ca6dad21d8b309af
+// @DATE:Thu Nov 06 03:08:17 BDT 2014
 
 
 import play.core._
@@ -44,7 +44,14 @@ private[this] lazy val controllers_Home_index1_invoker = createInvoker(
 controllers.Home.index(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Home", "index", Nil,"GET", """ Home page""", Routes.prefix + """"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:10
+private[this] lazy val controllers_blog_Home_home2_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("blog"))))
+private[this] lazy val controllers_blog_Home_home2_invoker = createInvoker(
+controllers.blog.Home.home(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "home", Nil,"GET", """""", Routes.prefix + """blog"""))
+        
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """blog""","""controllers.blog.Home.home()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -64,6 +71,14 @@ case controllers_Assets_at0_route(params) => {
 case controllers_Home_index1_route(params) => {
    call { 
         controllers_Home_index1_invoker.call(controllers.Home.index())
+   }
+}
+        
+
+// @LINE:10
+case controllers_blog_Home_home2_route(params) => {
+   call { 
+        controllers_blog_Home_home2_invoker.call(controllers.blog.Home.home())
    }
 }
         

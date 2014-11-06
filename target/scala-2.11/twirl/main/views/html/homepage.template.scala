@@ -25,12 +25,13 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 	<head>
 	    """),_display_(/*6.7*/common/*6.13*/.head("Because I Can")),format.raw/*6.35*/("""
 	"""),format.raw/*7.2*/("""</head>
+<body>
 	<div class="container">
   <br>
   <br><br>
 	<div class="row-fluid">
-      <h1 class="pull-center"><strong>Welcome to Prime's canvas</strong></h1>
-      <p class="lead pull-center">Blog, Foods, Programming etc</p>
+      <h1 class="pull-center"><strong>Welcome to Shakib's canvas</strong></h1>
+      <p class="lead pull-center">Its All About My Blog, Programming etc</p>
 	</div>	
   <br><br><br><br>
   <div class="span12 row-fluid">
@@ -41,7 +42,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
             <br><br>
             <i class="fa fa-paper-plane fa-5x"></i>
             <br><br><br><br>
-            Take a look at what I have done and what I am trying to do <br>
+            Take a look at what I have been doing <br>
             <button class="btn btn-primary btn-flat">Go Here<i class="pull-right fa fa-angle-right"></i></button>
           </div>
       	</div>
@@ -82,6 +83,7 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
       <div class="pull-center">
       	<h2>Host</h2>
       </div>
+      <br>
       So far openshift is awesome (as long as they are free!), better than cloudbees!
       </div>
     </div>
@@ -106,22 +108,24 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         
         <script type="text/javascript">
         
-        $(document).ready(function() """),format.raw/*89.38*/("""{"""),format.raw/*89.39*/("""
+        $(document).ready(function() """),format.raw/*91.38*/("""{"""),format.raw/*91.39*/("""
         
             
         
-        """),format.raw/*93.9*/("""}"""),format.raw/*93.10*/(""");
+        """),format.raw/*95.9*/("""}"""),format.raw/*95.10*/(""");
         
         </script>
         
         <script>
-          (function(i,s,o,g,r,a,m)"""),format.raw/*98.35*/("""{"""),format.raw/*98.36*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*98.86*/("""{"""),format.raw/*98.87*/("""
-          """),format.raw/*99.11*/("""(i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*99.46*/("""}"""),format.raw/*99.47*/(""",i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          """),format.raw/*101.11*/("""}"""),format.raw/*101.12*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-40413119-1', 'bootply.com');
-          ga('send', 'pageview');
-        </script>
+		  (function(i,s,o,g,r,a,m)"""),format.raw/*100.29*/("""{"""),format.raw/*100.30*/("""i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()"""),format.raw/*100.80*/("""{"""),format.raw/*100.81*/("""
+		  """),format.raw/*101.5*/("""(i[r].q=i[r].q||[]).push(arguments)"""),format.raw/*101.40*/("""}"""),format.raw/*101.41*/(""",i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  """),format.raw/*103.5*/("""}"""),format.raw/*103.6*/(""")(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-56399850-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
         
     
 </body>
@@ -137,11 +141,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 03 09:05:38 BDT 2014
+                  DATE: Thu Nov 06 03:08:17 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/homepage.scala.html
-                  HASH: aeadeb7cdece74792301a84c4a7e5ebe7593d0ef
-                  MATRIX: 583->1|646->39|660->45|702->67|730->69|3244->2555|3273->2556|3340->2596|3369->2597|3487->2687|3516->2688|3594->2738|3623->2739|3662->2750|3725->2785|3754->2786|3926->2929|3956->2930
-                  LINES: 22->2|26->6|26->6|26->6|27->7|109->89|109->89|113->93|113->93|118->98|118->98|118->98|118->98|119->99|119->99|119->99|121->101|121->101
+                  HASH: 7ffddeb685772838f8b952d12f86347b35c7b506
+                  MATRIX: 583->1|646->39|660->45|702->67|730->69|3252->2563|3281->2564|3348->2604|3377->2605|3490->2689|3520->2690|3599->2740|3629->2741|3662->2746|3726->2781|3756->2782|3915->2913|3944->2914
+                  LINES: 22->2|26->6|26->6|26->6|27->7|111->91|111->91|115->95|115->95|120->100|120->100|120->100|120->100|121->101|121->101|121->101|123->103|123->103
                   -- GENERATED --
               */
           
