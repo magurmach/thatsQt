@@ -47,7 +47,7 @@ Seq[Any](format.raw/*1.17*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 06 12:33:09 BDT 2014
+                  DATE: Mon Nov 10 00:10:12 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/common/blog/navbar.scala.html
                   HASH: d1d7df297fcf65ba2c477ba9f3b60212998a4869
                   MATRIX: 518->1|621->16|649->18|1134->476|1160->481

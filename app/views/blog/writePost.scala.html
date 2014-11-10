@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	@common.blog.head("Becasue I can")
+	</head>
+	<body>
+		<script type="text/javascript" src="@routes.Assets.at("tinymce/js/tinymce/tinymce.min.js")"></script>
+		<script type="text/javascript">
+		tinymce.init({
+			selector: "textarea",
+			auto_focus: "e1m1",
+			theme: "modern",
+			browser_spellcheck : true,
+			plugins: "save",
+			toolbar: "save | insertfile undo redo | styleselect | bold italic",
+			save_enablewhendirty: true,
+			width: 1000,
+			height:350,
+			content_css: "@routes.Assets.at("stylesheets/writepost.css")"
+		});
+		</script>
+		<div class="container">
+       		 <div class="row clearfix">
+				<h2 calss="text-info">
+					Write Post
+				</h2>
+				
+				<form role="form" action="/savePost" method="POST">
+						<label>Title</label><input class="form-control" name="title"/>
+					<div class="form-group">
+						<label>Sub-title</label><input class="form-control" name="sub-title"/>
+					</div>
+					<textarea id="e1m1" name="postbody"></textarea>
+					<br><br>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

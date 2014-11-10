@@ -1,6 +1,6 @@
 // @SOURCE:/Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/conf/routes
-// @HASH:6ef08b7dc1f6bcbfd3aa65bb453e212196e363e2
-// @DATE:Thu Nov 06 22:53:12 BDT 2014
+// @HASH:fec0d0660bfbf83d88069502ad079f8db92c2645
+// @DATE:Mon Nov 10 01:03:10 BDT 2014
 
 
 import play.core._
@@ -58,7 +58,63 @@ private[this] lazy val controllers_blog_Home_showPost3_invoker = createInvoker(
 controllers.blog.Home.showPost(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.Home", "showPost", Nil,"GET", """""", Routes.prefix + """post"""))
         
-def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """blog""","""controllers.blog.Home.home()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """post""","""controllers.blog.Home.showPost()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:14
+private[this] lazy val controllers_blog_WriteAndSave_writePost4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("writePost"))))
+private[this] lazy val controllers_blog_WriteAndSave_writePost4_invoker = createInvoker(
+controllers.blog.WriteAndSave.writePost(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.WriteAndSave", "writePost", Nil,"GET", """""", Routes.prefix + """writePost"""))
+        
+
+// @LINE:15
+private[this] lazy val controllers_blog_WriteAndSave_savePost5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("writePost"))))
+private[this] lazy val controllers_blog_WriteAndSave_savePost5_invoker = createInvoker(
+controllers.blog.WriteAndSave.savePost(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.WriteAndSave", "savePost", Nil,"GET", """""", Routes.prefix + """writePost"""))
+        
+
+// @LINE:18
+private[this] lazy val controllers_security_Security_loginPage6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signin"))))
+private[this] lazy val controllers_security_Security_loginPage6_invoker = createInvoker(
+controllers.security.Security.loginPage(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.security.Security", "loginPage", Nil,"GET", """ security""", Routes.prefix + """signin"""))
+        
+
+// @LINE:19
+private[this] lazy val controllers_security_Security_verifyAndSignIn7_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("requestSignIn"))))
+private[this] lazy val controllers_security_Security_verifyAndSignIn7_invoker = createInvoker(
+controllers.security.Security.verifyAndSignIn(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.security.Security", "verifyAndSignIn", Nil,"POST", """""", Routes.prefix + """requestSignIn"""))
+        
+
+// @LINE:22
+private[this] lazy val controllers_blog_WriteAndSave_writePost8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("writePost"))))
+private[this] lazy val controllers_blog_WriteAndSave_writePost8_invoker = createInvoker(
+controllers.blog.WriteAndSave.writePost(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.WriteAndSave", "writePost", Nil,"GET", """post""", Routes.prefix + """writePost"""))
+        
+
+// @LINE:23
+private[this] lazy val controllers_blog_WriteAndSave_savePost9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("savePost"))))
+private[this] lazy val controllers_blog_WriteAndSave_savePost9_invoker = createInvoker(
+controllers.blog.WriteAndSave.savePost(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.blog.WriteAndSave", "savePost", Nil,"POST", """""", Routes.prefix + """savePost"""))
+        
+
+// @LINE:26
+private[this] lazy val controllers_security_Security_invalid10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("invalid/"),DynamicPart("email", """[^/]+""",true))))
+private[this] lazy val controllers_security_Security_invalid10_invoker = createInvoker(
+controllers.security.Security.invalid(fakeValue[String]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.security.Security", "invalid", Seq(classOf[String]),"GET", """invalid SignIn""", Routes.prefix + """invalid/$email<[^/]+>"""))
+        
+
+// @LINE:28
+private[this] lazy val controllers_Home_error11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),DynamicPart("text", """[^/]+""",true))))
+private[this] lazy val controllers_Home_error11_invoker = createInvoker(
+controllers.Home.error(fakeValue[String]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Home", "error", Seq(classOf[String]),"GET", """error""", Routes.prefix + """$text<[^/]+>"""))
+        
+def documentation = List(("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix,"""controllers.Home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """blog""","""controllers.blog.Home.home()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """post""","""controllers.blog.Home.showPost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """writePost""","""controllers.blog.WriteAndSave.writePost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """writePost""","""controllers.blog.WriteAndSave.savePost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signin""","""controllers.security.Security.loginPage()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """requestSignIn""","""controllers.security.Security.verifyAndSignIn()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """writePost""","""controllers.blog.WriteAndSave.writePost()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """savePost""","""controllers.blog.WriteAndSave.savePost()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """invalid/$email<[^/]+>""","""controllers.security.Security.invalid(email:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """$text<[^/]+>""","""controllers.Home.error(text:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -94,6 +150,70 @@ case controllers_blog_Home_home2_route(params) => {
 case controllers_blog_Home_showPost3_route(params) => {
    call { 
         controllers_blog_Home_showPost3_invoker.call(controllers.blog.Home.showPost())
+   }
+}
+        
+
+// @LINE:14
+case controllers_blog_WriteAndSave_writePost4_route(params) => {
+   call { 
+        controllers_blog_WriteAndSave_writePost4_invoker.call(controllers.blog.WriteAndSave.writePost())
+   }
+}
+        
+
+// @LINE:15
+case controllers_blog_WriteAndSave_savePost5_route(params) => {
+   call { 
+        controllers_blog_WriteAndSave_savePost5_invoker.call(controllers.blog.WriteAndSave.savePost())
+   }
+}
+        
+
+// @LINE:18
+case controllers_security_Security_loginPage6_route(params) => {
+   call { 
+        controllers_security_Security_loginPage6_invoker.call(controllers.security.Security.loginPage())
+   }
+}
+        
+
+// @LINE:19
+case controllers_security_Security_verifyAndSignIn7_route(params) => {
+   call { 
+        controllers_security_Security_verifyAndSignIn7_invoker.call(controllers.security.Security.verifyAndSignIn())
+   }
+}
+        
+
+// @LINE:22
+case controllers_blog_WriteAndSave_writePost8_route(params) => {
+   call { 
+        controllers_blog_WriteAndSave_writePost8_invoker.call(controllers.blog.WriteAndSave.writePost())
+   }
+}
+        
+
+// @LINE:23
+case controllers_blog_WriteAndSave_savePost9_route(params) => {
+   call { 
+        controllers_blog_WriteAndSave_savePost9_invoker.call(controllers.blog.WriteAndSave.savePost())
+   }
+}
+        
+
+// @LINE:26
+case controllers_security_Security_invalid10_route(params) => {
+   call(params.fromPath[String]("email", None)) { (email) =>
+        controllers_security_Security_invalid10_invoker.call(controllers.security.Security.invalid(email))
+   }
+}
+        
+
+// @LINE:28
+case controllers_Home_error11_route(params) => {
+   call(params.fromPath[String]("text", None)) { (text) =>
+        controllers_Home_error11_invoker.call(controllers.Home.error(text))
    }
 }
         

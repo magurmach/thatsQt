@@ -8,4 +8,9 @@ public class Home extends Controller{
 	{
 		return ok(views.html.homepage.render());
 	}
+	
+	public static Result error(String x)
+	{
+		return ok(views.html.error404.render(x));
+	}
 }

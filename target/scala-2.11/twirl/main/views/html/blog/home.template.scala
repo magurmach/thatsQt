@@ -35,9 +35,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
             <div class="sidebar col-md-5 col-sm-12 " style="left: 0px;">
                 <div class="site-info">
                     <div class="primary-info">
+                    
                     <div class="side">
-                    	<img src=""""),_display_(/*18.33*/routes/*18.39*/.Assets.at("images/me/profile.png")),format.raw/*18.74*/("""" class="user-icon user-1" alt="user-image">
-                    </div>
+                    	<img src=""""),_display_(/*19.33*/routes/*19.39*/.Assets.at("images/me/profile.jpg")),format.raw/*19.74*/("""" class="user-icon user-1" alt="user-image">
+                    </div> 
                     <h1>Some Bytes From Me</h1>
                         <p align="justify">
                         First time I am into designing and you have to admit, it looks good!
@@ -264,10 +265,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
     </div></div>
     
-    <script src=""""),_display_(/*246.19*/routes/*246.25*/.Assets.at("javascripts/jquery.jpanelmenu.min.js")),format.raw/*246.75*/(""""></script>
-	<script src=""""),_display_(/*247.16*/routes/*247.22*/.Assets.at("javascripts/blogmain.js")),format.raw/*247.59*/(""""></script>
+    <script src=""""),_display_(/*247.19*/routes/*247.25*/.Assets.at("javascripts/jquery.jpanelmenu.min.js")),format.raw/*247.75*/(""""></script>
+	<script src=""""),_display_(/*248.16*/routes/*248.22*/.Assets.at("javascripts/blogmain.js")),format.raw/*248.59*/(""""></script>
 	<style id="jPanelMenu-style-master">
-	body"""),format.raw/*249.6*/("""{"""),format.raw/*249.7*/("""width:100%"""),format.raw/*249.17*/("""}"""),format.raw/*249.18*/(""".jPanelMenu,body"""),format.raw/*249.34*/("""{"""),format.raw/*249.35*/("""overflow-x:hidden"""),format.raw/*249.52*/("""}"""),format.raw/*249.53*/("""#jPanelMenu-menu"""),format.raw/*249.69*/("""{"""),format.raw/*249.70*/("""display:block;position:fixed;top:0;left:0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch"""),format.raw/*249.203*/("""}"""),format.raw/*249.204*/(""".jPanelMenu-panel"""),format.raw/*249.221*/("""{"""),format.raw/*249.222*/("""position:static;left:0;top:0;z-index:2;width:100%;min-height:100%;background:rgb(255, 255, 255)"""),format.raw/*249.317*/("""}"""),format.raw/*249.318*/("""</style>
+	body"""),format.raw/*250.6*/("""{"""),format.raw/*250.7*/("""width:100%"""),format.raw/*250.17*/("""}"""),format.raw/*250.18*/(""".jPanelMenu,body"""),format.raw/*250.34*/("""{"""),format.raw/*250.35*/("""overflow-x:hidden"""),format.raw/*250.52*/("""}"""),format.raw/*250.53*/("""#jPanelMenu-menu"""),format.raw/*250.69*/("""{"""),format.raw/*250.70*/("""display:block;position:fixed;top:0;left:0;height:100%;z-index:-1;overflow-x:hidden;overflow-y:scroll;-webkit-overflow-scrolling:touch"""),format.raw/*250.203*/("""}"""),format.raw/*250.204*/(""".jPanelMenu-panel"""),format.raw/*250.221*/("""{"""),format.raw/*250.222*/("""position:static;left:0;top:0;z-index:2;width:100%;min-height:100%;background:rgb(255, 255, 255)"""),format.raw/*250.317*/("""}"""),format.raw/*250.318*/("""</style>
 
 	</body>
 </html>"""))}
@@ -282,11 +283,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 06 21:59:21 BDT 2014
+                  DATE: Mon Nov 10 00:10:12 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/blog/home.scala.html
-                  HASH: afadb9cd4d792a3c252ff5a54b9c4bfbdf514f35
-                  MATRIX: 584->0|642->33|655->39|702->66|730->68|775->88|788->94|837->123|868->127|1263->495|1278->501|1334->536|11966->11140|11982->11146|12054->11196|12109->11223|12125->11229|12184->11266|12267->11321|12296->11322|12335->11332|12365->11333|12410->11349|12440->11350|12486->11367|12516->11368|12561->11384|12591->11385|12754->11518|12785->11519|12832->11536|12863->11537|12988->11632|13019->11633
-                  LINES: 22->1|25->4|25->4|25->4|26->5|29->8|29->8|29->8|31->10|39->18|39->18|39->18|267->246|267->246|267->246|268->247|268->247|268->247|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249|270->249
+                  HASH: 011c00835ad262a2bd8887cee22076e868047410
+                  MATRIX: 584->0|642->33|655->39|702->66|730->68|775->88|788->94|837->123|868->127|1284->516|1299->522|1355->557|11988->11162|12004->11168|12076->11218|12131->11245|12147->11251|12206->11288|12289->11343|12318->11344|12357->11354|12387->11355|12432->11371|12462->11372|12508->11389|12538->11390|12583->11406|12613->11407|12776->11540|12807->11541|12854->11558|12885->11559|13010->11654|13041->11655
+                  LINES: 22->1|25->4|25->4|25->4|26->5|29->8|29->8|29->8|31->10|40->19|40->19|40->19|268->247|268->247|268->247|269->248|269->248|269->248|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250|271->250
                   -- GENERATED --
               */
           

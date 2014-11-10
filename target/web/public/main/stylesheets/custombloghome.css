@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda);
+
 .side img {
   width: 100px;
   height: 100px;
@@ -9,4 +11,37 @@
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
+  border-width: 2px;
+  border-color: #fff;
+  border-style: solid;
 }
+
+.largeHeader{
+	font-family: 'Ruda',Arial,Helvetica,Sans-Serif;
+	font-size: 50px;
+	color: #000000;
+}
+
+.mediumHeader{
+	font-family: 'Ruda',Arial,Helvetica,Sans-Serif;
+	font-size: 30px;
+	color: #000000;
+}
+
+.mediumHeader lp{
+	display: inline;
+	font-family: 'Ruda',Arial,Helvetica,Sans-Serif;
+	font-size: 30px;
+	color: #D74895;
+}
+
+.message{
+	font-family: 'Ruda',Arial,Helvetica,Sans-Serif;
+	font-size: 20px;
+	color: #000000;
+}
+
+.writingpost{
+	font-size: 15px;
+}
+

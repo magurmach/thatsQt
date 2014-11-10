@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>activator-play-slick</name>
+  <name>play</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>

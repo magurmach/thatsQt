@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@common.blog.head("Becasue I can - Sign In")
+	</head>
+	
+  	<body cz-shortcut-listen="true">
+  	
+		<link rel="stylesheet" href="@routes.Assets.at("stylesheets/signin.css")">
+
+	    <div class="container">
+		      <form class="form-signin" role="form" action="/requestSignIn" method="POST">
+		        <h2 class="form-signin-heading">Please sign in</h2>
+		        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="" name="email">
+		        <input type="password" class="form-control" placeholder="Password" required="" name="password">
+		        <br>
+		        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		      </form>
+		</div>
+	
+	</body>
+</html>
