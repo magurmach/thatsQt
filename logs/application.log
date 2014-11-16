@@ -1,9 +1,9 @@
-2014-11-16 13:35:36,030 - [INFO] - from play in pool-38-thread-2 
+2014-11-16 14:09:25,060 - [INFO] - from play in pool-31-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-11-16 13:35:40,964 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 14:09:29,686 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-16 13:35:41,731 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 14:09:30,638 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
