@@ -11,12 +11,22 @@ import play.mvc.Result;
 public class WriteAndSave extends Controller{
 	public static Result writePost()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		List<Category> list=Category.find.all();
 		return ok(views.html.blog.writePost.render(list));
 	}
 	
 	public static Result savePost()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Map<String,String[]> params=request().body().asFormUrlEncoded();
 		Post temporary=new Post();
 		temporary.title=params.get("title")[0];
@@ -32,6 +42,11 @@ public class WriteAndSave extends Controller{
 	
 	public static Result saveExisting()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Map<String,String[]> params=request().body().asFormUrlEncoded();
 		int id=Integer.parseInt(params.get("id")[0]);
 		Post temporary=Post.find.where().eq("id", id).findUnique();
@@ -49,6 +64,11 @@ public class WriteAndSave extends Controller{
 	
 	public static Result deletePost(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Post temporary= Post.find.where().eq("id", id).findUnique();
 		if(temporary!=null)
 		{
@@ -58,6 +78,11 @@ public class WriteAndSave extends Controller{
 	}
 	public static Result editPost(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Post temporary= Post.find.where().eq("id", id).findUnique();
 		List<Category> list=Category.find.all();
 		return ok(views.html.blog.editPost.render(temporary,list));

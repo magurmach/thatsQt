@@ -29,10 +29,9 @@
                     </div> 
                     <h1>Some Bytes From Me</h1>
                         <p align="justify">
-                        First time I am into designing and you have to admit, it looks good!
-                        While you keep thinking 'this is nothing but another cute wordpress thing', I keep continuing design something you continue to envy of.
-						</p>
-                        <p>If I can think it, I can design it.</p>
+                        A week long coding and this is what I came up with. Lots of things to be done. Lots of!
+                        </p>
+                        <p>Eat, walk, think, code!</p>
                     </div>
                     <div class="secondary-info">
                         <p><a class="btn btn-writer btn-post" href="/"><i class="fa fa-home"></i> Go Home</a></p>
@@ -49,11 +48,12 @@
                     <a href="#" class="select-categories">Categories</a>
                 </div>
 				@if(searchOn==true){
-					<h3>Posts in @query</h3>
+					<h3 ><div class="mdisable">All posts in @query ... </div></h3>
+					<p class="horizontalLine"></p>
 				}
                 <div class="home-page-posts animated fadeIn ">
-                if(posts.empty){
-                	<h3> nothing found</h3>
+                @if(posts.isEmpty){
+                	<h4> No posts here :( </h4>
                 }
                 @for(post<-posts){
                 
@@ -65,7 +65,7 @@
 	                        <p>@post.getSubtitle()</p>
 	                        
 	                        <p class="meta">
-	                            Shakib Ahmed in <a class="" href="category.html">@post.getCategory().getName()</a> <i class="link-spacer"></i> <i class="entypo-bookmark"></i>
+	                            Shakib Ahmed in <a class="" href="/blog?category=@post.getCategory().getId()">@post.getCategory().getName()</a> <i class="link-spacer"></i> <i class="entypo-bookmark"></i>
 	                            @post.getDateString()
 	                        </p>
 	                        </div>

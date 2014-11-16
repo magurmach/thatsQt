@@ -2163,3 +2163,15 @@ html {
 .bs-example {
   margin-bottom: 20px;
 }
+
+
+.horizontalLine{
+  width: 100%;
+  height: 1px;
+  background-color: #f7f7f7;
+  cursor: default;
+}
+
+.mdisable{
+  cursor: default;
+}

@@ -49,10 +49,10 @@ Seq[Any](format.raw/*1.27*/("""
 	"""),format.raw/*22.2*/("""<div class="postbanner">
 		<div class="posttitlebox">
 			<div class="post-quote">
-			 You don’t have to say everything to say something.
+			 One day I will find the right words, they will be simple.
 			</div>
 			<div class="post-subtitle">
-				with a nice and simply subtitle
+				 Jack Kerouac, <i>The Dharma Bums</i>
 			</div>
 		</div>
 	</div>
@@ -63,8 +63,8 @@ Seq[Any](format.raw/*1.27*/("""
 		
 				<div class="col-xs-12 main-content single-content">
 					<p class="meta">
-						<a class="">Shakib Ahmed</a> in <a>"""),_display_(/*39.43*/post/*39.47*/.getCategory().getName()),format.raw/*39.71*/("""</a> <i class="link-spacer"></i>
-						<i class="entypo-bookmark"></i> """),_display_(/*40.40*/post/*40.44*/.getPostDate()),format.raw/*40.58*/("""
+						<a class="">Shakib Ahmed</a> in <a href="/blog?category="""),_display_(/*39.64*/post/*39.68*/.getCategory.getId()),format.raw/*39.88*/("""">"""),_display_(/*39.91*/post/*39.95*/.getCategory().getName()),format.raw/*39.119*/("""</a> <i class="link-spacer"></i>
+						<i class="entypo-bookmark"></i> """),_display_(/*40.40*/post/*40.44*/.getDateString()),format.raw/*40.60*/("""
 					"""),format.raw/*41.6*/("""</p>
 					<h1>"""),_display_(/*42.11*/post/*42.15*/.getTitle()),format.raw/*42.26*/("""</h1>
 					<p class="subtitle">"""),_display_(/*43.27*/post/*43.31*/.getSubtitle()),format.raw/*43.45*/("""</p>
@@ -89,11 +89,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Nov 16 09:01:49 BDT 2014
+                  DATE: Sun Nov 16 13:14:15 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/blog/post.scala.html
-                  HASH: 291c24ae003b0820a2880ee509512ae77c83740a
-                  MATRIX: 738->1|881->26|909->61|936->62|994->95|1007->101|1054->128|1082->130|1172->192|1201->193|1233->198|1272->210|1356->273|1470->360|1498->361|1527->363|1622->431|1637->437|1694->473|1818->571|1832->577|1882->606|1911->608|2392->1062|2405->1066|2450->1090|2549->1162|2562->1166|2597->1180|2630->1186|2672->1201|2685->1205|2717->1216|2776->1248|2789->1252|2824->1266
-                  LINES: 26->1|29->1|31->4|32->5|35->8|35->8|35->8|36->9|38->11|38->11|39->12|39->12|41->14|43->16|43->16|44->17|46->19|46->19|46->19|48->21|48->21|48->21|49->22|66->39|66->39|66->39|67->40|67->40|67->40|68->41|69->42|69->42|69->42|70->43|70->43|70->43
+                  HASH: edd320d61f8b19a8b0e0c6c790045b0236a889e3
+                  MATRIX: 738->1|881->26|909->61|936->62|994->95|1007->101|1054->128|1082->130|1172->192|1201->193|1233->198|1272->210|1356->273|1470->360|1498->361|1527->363|1622->431|1637->437|1694->473|1818->571|1832->577|1882->606|1911->608|2426->1096|2439->1100|2480->1120|2510->1123|2523->1127|2569->1151|2668->1223|2681->1227|2718->1243|2751->1249|2793->1264|2806->1268|2838->1279|2897->1311|2910->1315|2945->1329
+                  LINES: 26->1|29->1|31->4|32->5|35->8|35->8|35->8|36->9|38->11|38->11|39->12|39->12|41->14|43->16|43->16|44->17|46->19|46->19|46->19|48->21|48->21|48->21|49->22|66->39|66->39|66->39|66->39|66->39|66->39|67->40|67->40|67->40|68->41|69->42|69->42|69->42|70->43|70->43|70->43
                   -- GENERATED --
               */
           

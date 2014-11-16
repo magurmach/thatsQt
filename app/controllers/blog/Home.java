@@ -28,7 +28,7 @@ public class Home extends Controller{
 		List<Category> categoryList=Category.find.all();
 		if(key.equals("") || value.equals(""))
 		{
-			List<Post> postList=Post.find.all();
+			List<Post> postList=Post.find.where().eq("postStatus", true).findList();
 			return ok(views.html.blog.home.render(postList,categoryList,false,""));
 		}
 		else
@@ -40,7 +40,7 @@ public class Home extends Controller{
 			{
 				return redirect("/invalidRequest/category="+value);
 			}
-			List<Post> postList=Post.find.where().eq("category", category).findList();
+			List<Post> postList=Post.find.where().eq("postStatus", true).eq("category", category).findList();
 			return ok(views.html.blog.home.render(postList,categoryList,true,category.getName()));
 		}
 		/*

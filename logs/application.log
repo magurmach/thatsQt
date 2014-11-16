@@ -1101,3 +1101,151 @@ database [default] connected at jdbc:mysql://localhost/blogofprime
 2014-11-16 12:17:43,030 - [INFO] - from play in play-internal-execution-context-44 
 Application started (Dev)
 
+2014-11-16 12:30:13,386 - [INFO] - from play in play-internal-execution-context-46 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:30:13,444 - [INFO] - from play in play-internal-execution-context-46 
+Application started (Dev)
+
+2014-11-16 12:33:18,440 - [INFO] - from play in play-internal-execution-context-46 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:33:18,497 - [INFO] - from play in play-internal-execution-context-46 
+Application started (Dev)
+
+2014-11-16 12:35:34,449 - [INFO] - from play in play-internal-execution-context-47 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:35:34,516 - [INFO] - from play in play-internal-execution-context-47 
+Application started (Dev)
+
+2014-11-16 12:36:44,694 - [ERROR] - from application in New I/O worker #7 
+
+
+! @6k8454a28 - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value empty is not a member of java.util.List[models.posts.Post]]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 12:37:33,339 - [INFO] - from play in play-internal-execution-context-48 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:37:33,408 - [INFO] - from play in play-internal-execution-context-48 
+Application started (Dev)
+
+2014-11-16 12:37:52,117 - [INFO] - from play in play-internal-execution-context-49 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:37:52,201 - [INFO] - from play in play-internal-execution-context-49 
+Application started (Dev)
+
+2014-11-16 12:38:48,255 - [INFO] - from play in play-internal-execution-context-50 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:38:48,316 - [INFO] - from play in play-internal-execution-context-50 
+Application started (Dev)
+
+2014-11-16 12:39:01,151 - [INFO] - from play in play-internal-execution-context-50 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:39:01,223 - [INFO] - from play in play-internal-execution-context-50 
+Application started (Dev)
+
+2014-11-16 12:40:41,481 - [INFO] - from play in play-internal-execution-context-50 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:40:41,556 - [INFO] - from play in play-internal-execution-context-50 
+Application started (Dev)
+
+2014-11-16 12:41:16,473 - [INFO] - from play in play-internal-execution-context-52 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:41:16,523 - [INFO] - from play in play-internal-execution-context-52 
+Application started (Dev)
+
+2014-11-16 12:43:20,912 - [INFO] - from play in play-internal-execution-context-54 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:43:20,957 - [INFO] - from play in play-internal-execution-context-54 
+Application started (Dev)
+
+2014-11-16 12:45:13,920 - [INFO] - from play in play-internal-execution-context-55 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:45:13,973 - [INFO] - from play in play-internal-execution-context-55 
+Application started (Dev)
+
+2014-11-16 12:46:52,077 - [INFO] - from play in play-internal-execution-context-56 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:46:52,154 - [INFO] - from play in play-internal-execution-context-56 
+Application started (Dev)
+
+2014-11-16 12:49:30,725 - [INFO] - from play in play-internal-execution-context-57 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:49:30,783 - [INFO] - from play in play-internal-execution-context-57 
+Application started (Dev)
+
+2014-11-16 12:52:07,129 - [INFO] - from play in play-internal-execution-context-58 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:52:07,178 - [INFO] - from play in play-internal-execution-context-58 
+Application started (Dev)
+
+2014-11-16 13:02:48,628 - [INFO] - from play in play-internal-execution-context-58 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:02:48,699 - [INFO] - from play in play-internal-execution-context-58 
+Application started (Dev)
+
+2014-11-16 13:04:25,078 - [INFO] - from play in play-internal-execution-context-59 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:04:25,127 - [INFO] - from play in play-internal-execution-context-59 
+Application started (Dev)
+
+2014-11-16 13:11:40,241 - [INFO] - from play in play-internal-execution-context-60 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:11:40,298 - [INFO] - from play in play-internal-execution-context-60 
+Application started (Dev)
+
+2014-11-16 13:12:06,579 - [INFO] - from play in play-internal-execution-context-60 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:12:06,667 - [INFO] - from play in play-internal-execution-context-60 
+Application started (Dev)
+
+2014-11-16 13:13:24,827 - [INFO] - from play in play-internal-execution-context-60 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:13:24,884 - [INFO] - from play in play-internal-execution-context-60 
+Application started (Dev)
+
+2014-11-16 13:14:16,046 - [INFO] - from play in play-internal-execution-context-62 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 13:14:16,096 - [INFO] - from play in play-internal-execution-context-62 
+Application started (Dev)
+

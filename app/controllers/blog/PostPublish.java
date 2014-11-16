@@ -12,6 +12,11 @@ public class PostPublish  extends Controller{
 	
 	public static Result showAllPost()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		List<Post> unpublished,published;
 		unpublished= Post.find.where().eq("postStatus", false).findList();
 		published=Post.find.where().eq("postStatus", true).findList();
@@ -20,6 +25,11 @@ public class PostPublish  extends Controller{
 	
 	public static Result publishPost(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Post temporary;
 		temporary= Post.find.where().eq("id",id).findUnique();
 		if(temporary!=null) 
@@ -33,6 +43,11 @@ public class PostPublish  extends Controller{
 	
 	public static Result unpublishPost(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Post temporary;
 		temporary=Post.find.where().eq("id", id).findUnique();
 		if(temporary!=null)

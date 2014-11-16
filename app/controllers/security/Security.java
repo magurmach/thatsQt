@@ -19,12 +19,14 @@ public class Security extends Controller{
 	
 	public static Result verifyAndSignIn()
 	{
+		
 		Map<String, String[]> params=request().body().asFormUrlEncoded();
 		if(params.get("email")[0].equals("008.shakib@gmail.com")
 				&& params.get("password")[0].equals("#amar#"))
 			
 		{
-			return ok("Hastala Vista");
+			session("signedin","008.shakib");
+			return redirect("/showAllPost");
 		}
 		else
 		{

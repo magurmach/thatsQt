@@ -11,11 +11,21 @@ public class CategoryController extends Controller{
 	
 	public static Result createCategory()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		return ok(views.html.blog.createCategory.render());
 	}
 	
 	public static Result saveCategory()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Map<String,String[]> params=request().body().asFormUrlEncoded();
 		models.posts.Category temporary =new models.posts.Category();
 		temporary.name=params.get("title")[0];
@@ -26,18 +36,33 @@ public class CategoryController extends Controller{
 	
 	public static Result categoryList()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		List<models.posts.Category> list= models.posts.Category.find.all();
 		return ok(views.html.blog.allCategoryListPage.render(list));
 	}
 	
 	public static Result editCategory(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Category temp=Category.find.where().eq("id", id).findUnique();
 		return ok(views.html.blog.editCategory.render(temp));
 	}
 	
 	public static Result saveExisting()
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Map<String,String[]> params=request().body().asFormUrlEncoded();
 		int id=Integer.parseInt(params.get("id")[0]);
 		Category temp=Category.find.where().eq("id", id).findUnique();
@@ -49,6 +74,11 @@ public class CategoryController extends Controller{
 	
 	public static Result deleteCategory(int id)
 	{
+		String str=session("signedin");
+		if(str==null)
+		{
+			return redirect("/signin");
+		}
 		Category temporary= Category.find.where().eq("id", id).findUnique();
 		temporary.delete();
 		return redirect("/allCategory");
