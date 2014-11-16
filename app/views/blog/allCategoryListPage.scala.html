@@ -1,0 +1,35 @@
+@(categories: List[models.posts.Category])
+
+<!DOCTYPE html>
+<html>
+	<head>
+	@common.blog.head("Becasue I can")
+	</head>
+	<body>
+	<br><br>
+		<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<div class="row clearfix">
+							<div class="col-md-6 column">
+								<div class="list-group">
+									 <a class="list-group-item active">Unpublished Post</a>
+									 @for(category<-categories){
+										<div class="list-group-item">
+											<h4 class="list-group-item-heading">
+												@category.getId() : @category.getName()
+											</h4>
+											<p class="linkshow">
+												<a href="/editCategory/@category.getId()">(Edit)</a>
+												<a href="/deleteCategory/@category.getId()">(Delete)</a>
+											</p>
+										</div>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

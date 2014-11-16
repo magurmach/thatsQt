@@ -11,18 +11,11 @@ import java.util.*;
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
 import play.data.format.*;
+import play.data.format.Formats.DateFormatter;
 import play.data.validation.*;
 
 @Entity
 public class Post extends Model{
-	
-	public Date getPostDate() {
-		return postDate;
-	}
-
-	public void setPostDate(Date postDate) {
-		this.postDate = postDate;
-	}
 
 	@Id
 	@GeneratedValue
@@ -37,17 +30,22 @@ public class Post extends Model{
 	
 	public String subtitle;
 	
+	public String summary;
+
 	@Column(columnDefinition = "TEXT")
 	public String postbody;
 	
 	
+	public boolean postStatus=false;
 	
 	@Required
 	@ManyToOne
 	public Category category;
 	
+	public static Finder<Integer,Post> find = 
+			new Finder<Integer, Post> (Integer.class, Post.class);
 	
-
+	
 	public int getId() {
 		return id;
 	}
@@ -87,6 +85,37 @@ public class Post extends Model{
 	public void setCategory(Category category) {
 		this.category = category;
 	}
+
+	public boolean isPostStatus() {
+		return postStatus;
+	}
+
+	public void setPostStatus(boolean postStatus) {
+		this.postStatus = postStatus;
+	}
 	
+	public Date getPostDate() {
+		return postDate;
+	}
+
+	public void setPostDate(Date postDate) {
+		this.postDate = postDate;
+	}
+	
+	public String getSummary() {
+		return summary;
+	}
+
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
+	
+	public String getDateString()
+	{
+		String ret="";
+		DateFormatter formatter=new DateFormatter("dd MMM, yyyy h:m a");
+		ret=formatter.print(postDate,Locale.getDefault());
+		return ret;
+	}
 	
 }

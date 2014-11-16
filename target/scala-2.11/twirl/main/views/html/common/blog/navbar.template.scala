@@ -7,9 +7,16 @@ import play.twirl.api.TemplateMagic._
 import play.api.templates.PlayMagic._
 import models._
 import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import play.api.i18n._
-import play.api.mvc._
-import play.api.data._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
@@ -47,11 +54,11 @@ Seq[Any](format.raw/*1.17*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 10 00:10:12 BDT 2014
+                  DATE: Wed Nov 12 22:19:33 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/common/blog/navbar.scala.html
-                  HASH: d1d7df297fcf65ba2c477ba9f3b60212998a4869
-                  MATRIX: 518->1|621->16|649->18|1134->476|1160->481
-                  LINES: 19->1|22->1|24->3|32->11|32->11
+                  HASH: 0cd066d13b1c49465d4b8fe069ca363d6884666c
+                  MATRIX: 736->1|839->16|867->18|1352->476|1378->481
+                  LINES: 26->1|29->1|31->3|39->11|39->11
                   -- GENERATED --
               */
           

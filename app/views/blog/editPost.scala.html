@@ -1,0 +1,62 @@
+@(post: models.posts.Post, categories: List[models.posts.Category])
+
+@import play.api.libs.json.Json 
+
+<!DOCTYPE html>
+<html>
+	<head>
+	@common.blog.head("Becasue I can")
+	
+	<script src="@routes.Assets.at("javascripts/bootstrap-select.min.js")"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="@routes.Assets.at("tinymce/js/tinymce/tinymce.min.js")"></script>
+		<script type="text/javascript">
+			var data = @Html(Json.obj(  
+			  "body" -> post.postbody 
+			).toString); 
+			tinyMCE.init({
+				setup : function(ed) {
+			      ed.on('init',function(e){
+			      	tinyMCE.get("e1m1").setContent(data.body);
+			      });
+			   },
+				selector: "textarea",
+				auto_focus: "e1m1",
+				theme: "modern",
+				browser_spellcheck : true,
+				plugins: "save",
+				save_enablewhendirty: false,
+				toolbar: "save | insertfile undo redo | styleselect | bold italic",
+				width: 1000,
+				height:350,
+				content_css: "@routes.Assets.at("stylesheets/writepost.css")"
+			});
+		</script>
+		<div class="container">
+       		 <div class="row clearfix">
+				<h2 calss="text-info">
+					Edit Post
+				</h2>
+				<form role="form" action="/saveExistingPost" method="POST">
+						<input class="form-control" name="id" value="@post.getId()" type="hidden"/>
+						<label>Title</label><input class="form-control" name="title" value="@post.getTitle()"/>
+						<label>Sub-title</label><input class="form-control" name="sub-title" value="@post.getSubtitle()"/>
+						<label>Select Category</label>
+						<select class="selectpicker" style="display: none;" name="category">
+							@for(category<-categories){
+								<option value='@category.getId()'>@category.getName()</option>
+							}
+						</select>
+						</br>
+						<label>Story Summary</label><input class="form-control" name="summary" value="@post.getSummary()"/>
+						<br>
+					<textarea id="e1m1" name="e1m1" class="mceEditor"></textarea>
+					<br><br>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>

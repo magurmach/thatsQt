@@ -7,9 +7,16 @@ import play.twirl.api.TemplateMagic._
 import play.api.templates.PlayMagic._
 import models._
 import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import play.api.i18n._
-import play.api.mvc._
-import play.api.data._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
@@ -52,11 +59,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 10 00:10:12 BDT 2014
+                  DATE: Wed Nov 12 22:19:33 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/security/signin.scala.html
-                  HASH: f981368584e1b0ab4982645501e1d835042bd646
-                  MATRIX: 590->1|659->45|673->51|730->88|758->90|867->172|882->178|939->214
-                  LINES: 22->2|25->5|25->5|25->5|26->6|30->10|30->10|30->10
+                  HASH: 95319d8d6fc1aebfa7f3c144a964f6f5c29f59a2
+                  MATRIX: 808->1|877->45|891->51|948->88|976->90|1085->172|1100->178|1157->214
+                  LINES: 29->2|32->5|32->5|32->5|33->6|37->10|37->10|37->10
                   -- GENERATED --
               */
           

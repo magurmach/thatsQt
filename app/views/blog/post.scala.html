@@ -1,14 +1,24 @@
+@(post: models.posts.Post)
+
+@import play.api.libs.json.Json 
+
 <!DOCTYPE html>
 <html>
 	<head>
 	@common.blog.head("Becasue I can")
 	</head>
-	
-	<body>
+	<script type="text/javascript">
+			function getBody(){
+				var data = @Html(Json.obj(  
+				  "body" -> post.postbody 
+				).toString);
+				$("#replacer").replaceWith("<div class=\"modelToBody\">"+data.body+"</div>");
+			}
+	</script>
+	<body onload="getBody()">
 	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/banner.css")">
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 	@common.blog.navbar("   Blogger Me")
-	
 	<div class="postbanner">
 		<div class="posttitlebox">
 			<div class="post-quote">
@@ -17,13 +27,27 @@
 			<div class="post-subtitle">
 				with a nice and simply subtitle
 			</div>
-			
 		</div>
-	
 	</div>
-	
-	
-	
+	<br>
+	<div class="afterPostBanner">
+		<div class="container">
+	        <div class="row">
+		
+				<div class="col-xs-12 main-content single-content">
+					<p class="meta">
+						<a class="">Shakib Ahmed</a> in <a>@post.getCategory().getName()</a> <i class="link-spacer"></i>
+						<i class="entypo-bookmark"></i> @post.getPostDate()
+					</p>
+					<h1>@post.getTitle()</h1>
+					<p class="subtitle">@post.getSubtitle()</p>
+					
+					<div class="modelToBody" id="replacer">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 	</body>
-	
 </html>

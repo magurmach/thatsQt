@@ -6,6 +6,8 @@
   padding-right: 5px;
   width: 100%;
   height: 200px;
+  display: block;
+  position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,25 +18,37 @@
   transition: all, 450ms;
 }
 
+.afterPostBanner{
+  position: fixed;
+  top: 200px;  
+}
+
 @media (min-width: 768px) {
   /* line 1, ../sass/partials/_sidebar.sass */
   .postbanner {
     height: 190px;
   }
+  .afterPostBanner{
+    top:190;
+  }
 }
 @media (min-width: 992px) {
   /* line 1, ../sass/partials/_sidebar.sass */
   .postbanner {
-    width: 100%;
     height: 250px;
-    position: fixed;
     background-color: whitesmoke;
+  }
+  .afterPostBanner{
+    top:250px;
   }
 }
 @media (min-width: 1200px) {
   /* line 1, ../sass/partials/_sidebar.sass */
   .postbanner {
     height: 250px;
+  }
+  .afterPostBanner{
+    top:250px;
   }
 }
 
@@ -84,4 +98,13 @@
 
 .postbanner .posttitlebox .post-subtitle .writerofquote{
   font-style: italic;
+}
+
+.modelToBody{
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.modelToBody p{
+  font-size: 18px;
 }

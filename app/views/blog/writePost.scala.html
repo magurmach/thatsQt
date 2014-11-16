@@ -1,7 +1,12 @@
+@(categories: List[models.posts.Category])
+
 <!DOCTYPE html>
 <html>
 	<head>
 	@common.blog.head("Becasue I can")
+	
+	<script src="@routes.Assets.at("javascripts/bootstrap-select.min.js")"></script>
+	
 	</head>
 	<body>
 		<script type="text/javascript" src="@routes.Assets.at("tinymce/js/tinymce/tinymce.min.js")"></script>
@@ -12,12 +17,13 @@
 			theme: "modern",
 			browser_spellcheck : true,
 			plugins: "save",
+			save_enablewhendirty: false,
 			toolbar: "save | insertfile undo redo | styleselect | bold italic",
-			save_enablewhendirty: true,
 			width: 1000,
 			height:350,
 			content_css: "@routes.Assets.at("stylesheets/writepost.css")"
 		});
+			
 		</script>
 		<div class="container">
        		 <div class="row clearfix">
@@ -30,6 +36,15 @@
 					<div class="form-group">
 						<label>Sub-title</label><input class="form-control" name="sub-title"/>
 					</div>
+						<label>Select Category</label>
+						<select class="selectpicker" style="display: none;" name="category">
+							@for(category<-categories){
+								<option value='@category.getId()'>@category.getName()</option>
+							}
+						</select>
+						</br>
+						<label>Story Summary</label><input class="form-control" name="summary"/>
+						<br>
 					<textarea id="e1m1" name="postbody"></textarea>
 					<br><br>
 				</form>

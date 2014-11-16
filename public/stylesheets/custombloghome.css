@@ -45,3 +45,19 @@
 	font-size: 15px;
 }
 
+.linkshow{
+	color: #000;
+	font-size: 14px;
+}
+
+.linkshow a{
+	color: #000;
+}
+
+.linkshow a:hover{
+	color: #597791;
+}
+
+.linkshow a:visited{
+	color: #597791;
+}

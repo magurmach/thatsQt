@@ -7,9 +7,16 @@ import play.twirl.api.TemplateMagic._
 import play.api.templates.PlayMagic._
 import models._
 import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import play.api.i18n._
-import play.api.mvc._
-import play.api.data._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
@@ -63,11 +70,11 @@ Seq[Any](format.raw/*1.16*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 10 00:10:12 BDT 2014
+                  DATE: Wed Nov 12 22:19:33 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/error404.scala.html
-                  HASH: dc3933c24e5663fe04ff17d128b1aa5853eb1c96
-                  MATRIX: 508->1|610->15|638->17|696->50|709->56|756->83|784->85|1207->481|1222->487|1276->520|1530->747|1555->751
-                  LINES: 19->1|22->1|24->3|27->6|27->6|27->6|28->7|40->19|40->19|40->19|44->23|44->23
+                  HASH: 90460dfc54d0840965221015d22afd83c8ab25c7
+                  MATRIX: 726->1|828->15|856->17|914->50|927->56|974->83|1002->85|1425->481|1440->487|1494->520|1748->747|1773->751
+                  LINES: 26->1|29->1|31->3|34->6|34->6|34->6|35->7|47->19|47->19|47->19|51->23|51->23
                   -- GENERATED --
               */
           

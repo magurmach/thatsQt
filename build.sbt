@@ -23,6 +23,6 @@ libraryDependencies ++= Seq(
 
 fork in Test := false
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 EclipseKeys.withSource := true

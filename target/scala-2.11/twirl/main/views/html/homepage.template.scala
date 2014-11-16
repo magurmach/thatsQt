@@ -7,9 +7,16 @@ import play.twirl.api.TemplateMagic._
 import play.api.templates.PlayMagic._
 import models._
 import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import play.api.i18n._
-import play.api.mvc._
-import play.api.data._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
@@ -141,11 +148,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 10 00:10:12 BDT 2014
+                  DATE: Wed Nov 12 22:19:33 BDT 2014
                   SOURCE: /Users/sheikhahmed/Projects/ThatsQtRedShift/playseed/activator-play-slick/app/views/homepage.scala.html
-                  HASH: ef8b46e915f35d1a71bf30c3d0a78530b55d6099
-                  MATRIX: 583->1|646->39|660->45|702->67|730->69|3286->2597|3315->2598|3382->2638|3411->2639|3524->2723|3554->2724|3633->2774|3663->2775|3696->2780|3760->2815|3790->2816|3949->2947|3978->2948
-                  LINES: 22->2|26->6|26->6|26->6|27->7|111->91|111->91|115->95|115->95|120->100|120->100|120->100|120->100|121->101|121->101|121->101|123->103|123->103
+                  HASH: 24a088de0daaf9724cb8828ea70ce60a7dd5bd92
+                  MATRIX: 801->1|864->39|878->45|920->67|948->69|3504->2597|3533->2598|3600->2638|3629->2639|3742->2723|3772->2724|3851->2774|3881->2775|3914->2780|3978->2815|4008->2816|4167->2947|4196->2948
+                  LINES: 29->2|33->6|33->6|33->6|34->7|118->91|118->91|122->95|122->95|127->100|127->100|127->100|127->100|128->101|128->101|128->101|130->103|130->103
                   -- GENERATED --
               */
           

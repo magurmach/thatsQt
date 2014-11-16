@@ -1,0 +1,54 @@
+@(unpublishedPosts: List[models.posts.Post], publishedPosts: List[models.posts.Post])
+
+<!DOCTYPE html>
+<html>
+	<head>
+	@common.blog.head("Becasue I can")
+	</head>
+	<body>
+	<br><br>
+		<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<div class="row clearfix">
+							<div class="col-md-6 column">
+								<div class="list-group">
+									 <a class="list-group-item active">Unpublished Post</a>
+									 @for(post<-unpublishedPosts){
+										<div class="list-group-item">
+											<h4 class="list-group-item-heading">
+												@post.getId() : @post.getTitle()
+											</h4>
+											<p class="linkshow">
+												<a href="/edit/@post.getId()">(Edit)</a>
+												<a href="/preview/@post.getId()">(Preview)</a>
+												<a href="/publish/@post.getId()">(Publish)</a>
+												<a href="/deletePost/@post.getId()">(Delete)</a>
+											</p>
+										</div>
+									}
+								</div>
+							</div>
+							<div class="col-md-6 column">
+								<div class="list-group">
+									 <a class="list-group-item active">Published Post</a>
+									 @for(post<-publishedPosts){
+										<div class="list-group-item">
+											<h4 class="list-group-item-heading">
+												@post.getId() : @post.getTitle()
+											</h4>
+											<p class="linkshow">
+												<a href="/edit/@post.getId()">(Edit)</a>
+												<a href="/post/@post.getId()">(Read)</a>
+												<a href="/deletePost/@post.getId()">(Delete)</a>
+												<a href="/unpublish/@post.getId()">(Unpublish)</a>
+											</p>
+										</div>
+									}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

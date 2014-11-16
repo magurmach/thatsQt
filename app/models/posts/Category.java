@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import play.db.ebean.Model;
+import play.db.ebean.Model.Finder;
 
 @Entity
 public class Category extends Model{
@@ -16,10 +17,22 @@ public class Category extends Model{
 	public String name;
 	
 	public String imageDirectory;
+	
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
 	}
+	
+	
 
 	public void setName(String name) {
 		this.name = name;
@@ -33,5 +46,7 @@ public class Category extends Model{
 		this.imageDirectory = imageDirectory;
 	}
 	
+	public static Finder<Integer,Category> find = 
+			new Finder<Integer, Category> (Integer.class, Category.class);
 	
 }

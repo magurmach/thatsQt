@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	@common.blog.head("Becasue I can")
+	</head>
+	<body>
+		<script type="text/javascript">
+			function livePreview()
+			{
+				var title="<h2>" + $("#catTitle").val() +"</h2>";
+				var temp="\""+$("#catImgLink").val()+"\"";
+				var link="<a href=\"category.html\"><img src="+temp+" alt=\"category-image\"></a>";
+				$("#liveView").replaceWith("<div class=\"liveView\">"+title+link+"</div>");
+			}
+		</script>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					<button class="btn btn-success" onclick="livePreview()">Preview</button>
+					<form class="form-horizontal" role="form" action="/saveCategory" method="post">
+						<label>Category Title</label><input class="form-control" name="title" id="catTitle"/>
+						<label>Image Link</label><input class="form-control" name="link" id="catImgLink"/>
+						<br>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								 <button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 column">
+						<div class="category-preview col-xs-6 col-sm-4 ">
+                            <div id="liveView">
+							</div>
+                        </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

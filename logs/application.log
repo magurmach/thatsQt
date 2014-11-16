@@ -1,159 +1,1103 @@
-2014-11-10 17:53:41,259 - [INFO] - from play in pool-35-thread-1 
+2014-11-16 08:09:21,857 - [INFO] - from play in pool-35-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-11-10 17:58:22,101 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:09:33,325 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 17:58:22,894 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:09:34,344 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2014-11-10 18:02:07,260 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:32:37,377 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:02:07,367 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:32:37,447 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2014-11-10 18:04:19,376 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:34:25,446 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:04:19,437 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:34:25,536 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2014-11-10 18:11:33,320 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:41:27,795 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:11:33,368 - [INFO] - from play in play-internal-execution-context-1 
+2014-11-16 08:41:27,861 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2014-11-10 18:15:40,677 - [INFO] - from play in play-internal-execution-context-4 
+2014-11-16 08:46:32,948 - [INFO] - from play in play-internal-execution-context-4 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:15:40,739 - [INFO] - from play in play-internal-execution-context-4 
+2014-11-16 08:46:33,013 - [INFO] - from play in play-internal-execution-context-4 
 Application started (Dev)
 
-2014-11-10 18:16:13,918 - [INFO] - from play in play-internal-execution-context-5 
+2014-11-16 08:47:33,062 - [INFO] - from play in play-internal-execution-context-5 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:16:13,983 - [INFO] - from play in play-internal-execution-context-5 
+2014-11-16 08:47:33,154 - [INFO] - from play in play-internal-execution-context-5 
 Application started (Dev)
 
-2014-11-10 18:16:26,929 - [INFO] - from play in play-internal-execution-context-5 
+2014-11-16 08:48:19,497 - [INFO] - from play in play-internal-execution-context-6 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:16:26,982 - [INFO] - from play in play-internal-execution-context-5 
+2014-11-16 08:48:19,617 - [INFO] - from play in play-internal-execution-context-6 
 Application started (Dev)
 
-2014-11-10 18:16:46,869 - [INFO] - from play in play-internal-execution-context-7 
+2014-11-16 08:57:11,665 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6k8328n8k - Internal server error, for (GET) [/writePost] ->
+
+play.PlayExceptions$CompilationException: Compilation error[not found: value categories]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 08:58:53,125 - [INFO] - from play in play-internal-execution-context-7 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:16:46,928 - [INFO] - from play in play-internal-execution-context-7 
+2014-11-16 08:58:53,233 - [INFO] - from play in play-internal-execution-context-7 
 Application started (Dev)
 
-2014-11-10 18:17:36,971 - [INFO] - from play in play-internal-execution-context-7 
+2014-11-16 09:01:51,143 - [INFO] - from play in play-internal-execution-context-7 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:17:37,027 - [INFO] - from play in play-internal-execution-context-7 
+2014-11-16 09:01:51,222 - [INFO] - from play in play-internal-execution-context-7 
 Application started (Dev)
 
-2014-11-10 18:18:58,446 - [INFO] - from play in play-internal-execution-context-8 
+2014-11-16 09:06:15,488 - [INFO] - from play in play-internal-execution-context-7 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:18:58,516 - [INFO] - from play in play-internal-execution-context-8 
+2014-11-16 09:06:15,575 - [INFO] - from play in play-internal-execution-context-7 
 Application started (Dev)
 
-2014-11-10 18:34:17,856 - [INFO] - from play in play-internal-execution-context-9 
+2014-11-16 09:30:51,733 - [ERROR] - from application in New I/O worker #7 
+
+
+! @6k836jlg6 - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value getId is not a member of object views.html.blog.post]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 09:30:52,281 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6k836jmba - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value getId is not a member of object views.html.blog.post]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 09:33:50,765 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6k83740bl - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 09:34:45,425 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6k837737n - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 09:35:57,483 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6k837b5nd - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 09:36:25,827 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:34:17,909 - [INFO] - from play in play-internal-execution-context-9 
+2014-11-16 09:36:25,915 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2014-11-10 18:35:22,183 - [INFO] - from play in play-internal-execution-context-10 
+2014-11-16 09:37:08,464 - [INFO] - from play in play-internal-execution-context-10 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:35:22,244 - [INFO] - from play in play-internal-execution-context-10 
+2014-11-16 09:37:08,527 - [INFO] - from play in play-internal-execution-context-10 
 Application started (Dev)
 
-2014-11-10 18:36:21,933 - [INFO] - from play in play-internal-execution-context-10 
+2014-11-16 09:37:08,555 - [ERROR] - from play in play-akka.actor.default-dispatcher-98 
+Cannot invoke the action, eventually got an error: java.lang.IllegalArgumentException: Illegal pattern character 'A'
+
+2014-11-16 09:37:08,597 - [ERROR] - from application in play-akka.actor.default-dispatcher-98 
+
+
+! @6k837f730 - Internal server error, for (GET) [/blog] ->
+
+play.api.Application$$anon$1: Execution exception[[IllegalArgumentException: Illegal pattern character 'A']]
+	at play.api.Application$class.handleError(Application.scala:296) ~[na:na]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at scala.Option.map(Option.scala:145) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [na:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [na:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [na:na]
+	at com.typesafe.trace.FutureCallback.apply(FutureTrace.scala:136) [na:na]
+	at com.typesafe.trace.FutureCallback.apply(FutureTrace.scala:127) [na:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody0(Execution.scala:46) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody1$advice(Execution.scala:138) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:1) [na:na]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete_aroundBody2(Promise.scala:248) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise$AjcClosure3.run(Promise.scala:1) [na:na]
+	at com.typesafe.trace.FutureTraceAspect.ajc$around$com_typesafe_trace_FutureTraceAspect$4$3fd2d6f0proceed(FutureTraceAspect.aj:148) [na:na]
+	at com.typesafe.trace.FutureTraceAspect.ajc$around$com_typesafe_trace_FutureTraceAspect$4$3fd2d6f0(FutureTraceAspect.aj:150) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:244) [na:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) [na:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [na:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [na:na]
+Caused by: java.lang.IllegalArgumentException: Illegal pattern character 'A'
+	at java.text.SimpleDateFormat.compile(SimpleDateFormat.java:826) ~[na:1.8.0_20]
+	at java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:634) ~[na:1.8.0_20]
+	at java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:605) ~[na:1.8.0_20]
+	at play.data.format.Formats$DateFormatter.print(Formats.java:64) ~[na:na]
+	at models.posts.Post.getDateString(Post.java:117) ~[classes/:na]
+	at views.html.blog.home$$anonfun$apply$1.apply(home.template.scala:85) ~[classes/:na]
+	at views.html.blog.home$$anonfun$apply$1.apply(home.template.scala:74) ~[classes/:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[na:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[na:na]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:743) ~[na:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1177) ~[na:na]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[na:na]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[na:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245) ~[na:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[na:na]
+	at views.html.blog.home$.apply(home.template.scala:74) ~[classes/:na]
+	at views.html.blog.home$.render(home.template.scala:290) ~[classes/:na]
+	at views.html.blog.home.render(home.template.scala) ~[classes/:na]
+	at controllers.blog.Home.home(Home.java:15) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:236) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:236) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[na:na]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[na:na]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[na:na]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) [na:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody0(Execution.scala:46) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody1$advice(Execution.scala:138) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:1) [na:na]
+	at play.core.j.HttpExecutionContext.execute_aroundBody0(HttpExecutionContext.scala:32) ~[na:na]
+	at play.core.j.HttpExecutionContext.execute_aroundBody1$advice(HttpExecutionContext.scala:133) ~[na:na]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:1) ~[na:na]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[na:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[na:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[na:na]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[na:na]
+	at scala.Option.map(Option.scala:145) [na:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [na:na]
+	... 7 common frames omitted
+
+2014-11-16 09:40:37,340 - [INFO] - from play in play-internal-execution-context-10 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:36:22,006 - [INFO] - from play in play-internal-execution-context-10 
+2014-11-16 09:40:37,397 - [INFO] - from play in play-internal-execution-context-10 
 Application started (Dev)
 
-2014-11-10 18:38:23,248 - [INFO] - from play in play-internal-execution-context-12 
+2014-11-16 09:41:02,769 - [INFO] - from play in play-internal-execution-context-10 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:38:23,306 - [INFO] - from play in play-internal-execution-context-12 
+2014-11-16 09:41:02,822 - [INFO] - from play in play-internal-execution-context-10 
 Application started (Dev)
 
-2014-11-10 18:39:08,250 - [INFO] - from play in play-internal-execution-context-12 
+2014-11-16 09:42:04,359 - [INFO] - from play in play-internal-execution-context-12 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:39:08,300 - [INFO] - from play in play-internal-execution-context-12 
+2014-11-16 09:42:04,437 - [INFO] - from play in play-internal-execution-context-12 
 Application started (Dev)
 
-2014-11-10 18:39:36,744 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:42:19,014 - [INFO] - from play in play-internal-execution-context-12 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:39:36,789 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:42:19,072 - [INFO] - from play in play-internal-execution-context-12 
 Application started (Dev)
 
-2014-11-10 18:40:35,702 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:43:41,152 - [INFO] - from play in play-internal-execution-context-12 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:40:35,741 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:43:41,203 - [INFO] - from play in play-internal-execution-context-12 
 Application started (Dev)
 
-2014-11-10 18:42:34,332 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:44:14,108 - [INFO] - from play in play-internal-execution-context-15 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:42:34,381 - [INFO] - from play in play-internal-execution-context-14 
+2014-11-16 09:44:14,156 - [INFO] - from play in play-internal-execution-context-15 
 Application started (Dev)
 
-2014-11-10 18:43:13,268 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:44:38,697 - [INFO] - from play in play-internal-execution-context-15 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:43:13,339 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:44:38,752 - [INFO] - from play in play-internal-execution-context-15 
 Application started (Dev)
 
-2014-11-10 18:43:32,643 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:47:04,505 - [INFO] - from play in play-internal-execution-context-15 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 18:43:32,686 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:47:04,581 - [INFO] - from play in play-internal-execution-context-15 
 Application started (Dev)
 
-2014-11-10 19:07:43,145 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:55:20,845 - [INFO] - from play in play-internal-execution-context-15 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:07:43,198 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 09:55:20,919 - [INFO] - from play in play-internal-execution-context-15 
 Application started (Dev)
 
-2014-11-10 19:08:58,380 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:19:47,637 - [INFO] - from play in play-internal-execution-context-19 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:08:58,431 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:19:47,722 - [INFO] - from play in play-internal-execution-context-19 
 Application started (Dev)
 
-2014-11-10 19:10:45,950 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:20:21,719 - [INFO] - from play in play-internal-execution-context-20 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:10:45,990 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:20:21,864 - [INFO] - from play in play-internal-execution-context-20 
 Application started (Dev)
 
-2014-11-10 19:13:35,640 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:49:00,928 - [INFO] - from play in play-internal-execution-context-21 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:13:35,682 - [INFO] - from play in play-internal-execution-context-17 
+2014-11-16 10:49:00,998 - [INFO] - from play in play-internal-execution-context-21 
 Application started (Dev)
 
-2014-11-10 19:21:29,152 - [INFO] - from play in play-internal-execution-context-22 
+2014-11-16 10:49:33,389 - [INFO] - from play in play-internal-execution-context-21 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:21:29,211 - [INFO] - from play in play-internal-execution-context-22 
+2014-11-16 10:49:33,458 - [INFO] - from play in play-internal-execution-context-21 
 Application started (Dev)
 
-2014-11-10 19:24:06,358 - [INFO] - from play in play-internal-execution-context-22 
+2014-11-16 10:51:35,060 - [INFO] - from play in play-internal-execution-context-23 
 database [default] connected at jdbc:mysql://localhost/blogofprime
 
-2014-11-10 19:24:06,401 - [INFO] - from play in play-internal-execution-context-22 
+2014-11-16 10:51:35,128 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-16 10:52:26,365 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:52:26,455 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-16 10:53:50,612 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:53:50,684 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-16 10:54:31,129 - [INFO] - from play in play-internal-execution-context-23 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:54:31,196 - [INFO] - from play in play-internal-execution-context-23 
+Application started (Dev)
+
+2014-11-16 10:57:49,406 - [INFO] - from play in play-internal-execution-context-27 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:57:49,465 - [INFO] - from play in play-internal-execution-context-27 
+Application started (Dev)
+
+2014-11-16 10:59:06,660 - [INFO] - from play in play-internal-execution-context-27 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:59:06,747 - [INFO] - from play in play-internal-execution-context-27 
+Application started (Dev)
+
+2014-11-16 10:59:33,257 - [INFO] - from play in play-internal-execution-context-28 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 10:59:33,325 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-11-16 11:01:41,616 - [INFO] - from play in play-internal-execution-context-28 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:01:41,682 - [INFO] - from play in play-internal-execution-context-28 
+Application started (Dev)
+
+2014-11-16 11:02:54,287 - [INFO] - from play in play-internal-execution-context-30 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:02:54,361 - [INFO] - from play in play-internal-execution-context-30 
+Application started (Dev)
+
+2014-11-16 11:03:25,247 - [INFO] - from play in play-internal-execution-context-30 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:03:25,314 - [INFO] - from play in play-internal-execution-context-30 
+Application started (Dev)
+
+2014-11-16 11:03:55,017 - [INFO] - from play in play-internal-execution-context-32 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:03:55,117 - [INFO] - from play in play-internal-execution-context-32 
+Application started (Dev)
+
+2014-11-16 11:04:22,414 - [INFO] - from play in play-internal-execution-context-33 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:04:22,484 - [INFO] - from play in play-internal-execution-context-33 
+Application started (Dev)
+
+2014-11-16 11:04:41,744 - [INFO] - from play in play-internal-execution-context-33 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:04:41,791 - [INFO] - from play in play-internal-execution-context-33 
+Application started (Dev)
+
+2014-11-16 11:04:52,826 - [INFO] - from play in play-internal-execution-context-33 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:04:52,870 - [INFO] - from play in play-internal-execution-context-33 
+Application started (Dev)
+
+2014-11-16 11:05:45,152 - [INFO] - from play in play-internal-execution-context-33 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:05:45,212 - [INFO] - from play in play-internal-execution-context-33 
+Application started (Dev)
+
+2014-11-16 11:24:06,883 - [INFO] - from play in play-internal-execution-context-36 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:24:06,971 - [INFO] - from play in play-internal-execution-context-36 
+Application started (Dev)
+
+2014-11-16 11:29:45,568 - [INFO] - from play in play-internal-execution-context-37 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:29:45,630 - [INFO] - from play in play-internal-execution-context-37 
+Application started (Dev)
+
+2014-11-16 11:30:07,998 - [INFO] - from play in play-internal-execution-context-37 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:30:08,084 - [INFO] - from play in play-internal-execution-context-37 
+Application started (Dev)
+
+2014-11-16 11:31:55,418 - [INFO] - from play in play-internal-execution-context-37 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:31:55,464 - [INFO] - from play in play-internal-execution-context-37 
+Application started (Dev)
+
+2014-11-16 11:32:03,721 - [INFO] - from play in play-internal-execution-context-37 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:32:03,764 - [INFO] - from play in play-internal-execution-context-37 
+Application started (Dev)
+
+2014-11-16 11:33:26,857 - [INFO] - from play in play-internal-execution-context-37 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:33:26,900 - [INFO] - from play in play-internal-execution-context-37 
+Application started (Dev)
+
+2014-11-16 11:36:28,546 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6k83n6gj9 - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 11:37:26,259 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6k83n9o32 - Internal server error, for (GET) [/blog] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 11:39:45,789 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6k83nhmdj - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$UnexpectedException: Unexpected exception[The compilation failed without reporting any problem!]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1$$anonfun$apply$20.apply(PlayReloader.scala:235) ~[na:na]
+	at scala.Option.getOrElse(Option.scala:120) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+Caused by: sbt.compiler.CompileFailed: null
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:77) ~[na:na]
+	at sbt.compiler.JavaTool$class.apply(JavaCompiler.scala:35) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.apply(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.JavaCompiler$class.compile(JavaCompiler.scala:21) ~[na:na]
+	at sbt.compiler.JavaCompiler$JavaTool0.compile(JavaCompiler.scala:63) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply$mcV$sp(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileJava$1$1.apply(AggressiveCompile.scala:127) ~[na:na]
+	at sbt.compiler.AggressiveCompile.sbt$compiler$AggressiveCompile$$timed(AggressiveCompile.scala:166) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.compileJava$1(AggressiveCompile.scala:126) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:143) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3.apply(AggressiveCompile.scala:87) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:39) ~[na:na]
+	at sbt.inc.IncrementalCompile$$anonfun$doCompile$1.apply(Compile.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCommon.cycle(Incremental.scala:99) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:38) ~[na:na]
+	at sbt.inc.Incremental$$anonfun$1.apply(Incremental.scala:37) ~[na:na]
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:65) ~[na:na]
+	at sbt.inc.Incremental$.compile(Incremental.scala:37) ~[na:na]
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157) ~[na:na]
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71) ~[na:na]
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:75) ~[na:na]
+	at sbt.Compiler$.apply(Compiler.scala:66) ~[na:na]
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762) ~[na:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[na:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_20]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_20]
+
+2014-11-16 11:40:15,088 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6k83njdmm - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[not found: type boolean]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 11:40:37,718 - [INFO] - from play in play-internal-execution-context-38 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:40:37,805 - [INFO] - from play in play-internal-execution-context-38 
+Application started (Dev)
+
+2014-11-16 11:41:25,901 - [INFO] - from play in play-internal-execution-context-38 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:41:25,968 - [INFO] - from play in play-internal-execution-context-38 
+Application started (Dev)
+
+2014-11-16 11:41:37,529 - [INFO] - from play in play-internal-execution-context-40 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:41:37,584 - [INFO] - from play in play-internal-execution-context-40 
+Application started (Dev)
+
+2014-11-16 11:42:41,912 - [INFO] - from play in play-internal-execution-context-41 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:42:41,983 - [INFO] - from play in play-internal-execution-context-41 
+Application started (Dev)
+
+2014-11-16 11:42:56,821 - [INFO] - from play in play-internal-execution-context-42 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:42:56,877 - [INFO] - from play in play-internal-execution-context-42 
+Application started (Dev)
+
+2014-11-16 11:43:38,896 - [INFO] - from play in play-internal-execution-context-43 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:43:38,990 - [INFO] - from play in play-internal-execution-context-43 
+Application started (Dev)
+
+2014-11-16 11:49:40,168 - [INFO] - from play in play-internal-execution-context-43 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:49:40,258 - [INFO] - from play in play-internal-execution-context-43 
+Application started (Dev)
+
+2014-11-16 11:50:40,135 - [INFO] - from play in play-internal-execution-context-44 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 11:50:40,266 - [INFO] - from play in play-internal-execution-context-44 
+Application started (Dev)
+
+2014-11-16 11:50:40,292 - [ERROR] - from play in play-akka.actor.default-dispatcher-324 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2014-11-16 11:50:40,295 - [ERROR] - from application in play-akka.actor.default-dispatcher-324 
+
+
+! @6k83p32j9 - Internal server error, for (GET) [/blog?category=1] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[na:na]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at scala.Option.map(Option.scala:145) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [na:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [na:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [na:na]
+	at com.typesafe.trace.FutureCallback.apply(FutureTrace.scala:136) [na:na]
+	at com.typesafe.trace.FutureCallback.apply(FutureTrace.scala:127) [na:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody0(Execution.scala:46) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody1$advice(Execution.scala:138) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:1) [na:na]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete_aroundBody2(Promise.scala:248) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise$AjcClosure3.run(Promise.scala:1) [na:na]
+	at com.typesafe.trace.FutureTraceAspect.ajc$around$com_typesafe_trace_FutureTraceAspect$4$3fd2d6f0proceed(FutureTraceAspect.aj:148) [na:na]
+	at com.typesafe.trace.FutureTraceAspect.ajc$around$com_typesafe_trace_FutureTraceAspect$4$3fd2d6f0(FutureTraceAspect.aj:150) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:244) [na:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [na:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) [na:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [na:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [na:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.blog.Home.home(Home.java:39) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:222) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:222) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[na:na]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[na:na]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[na:na]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) [na:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody0(Execution.scala:46) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute_aroundBody1$advice(Execution.scala:138) [na:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:1) [na:na]
+	at play.core.j.HttpExecutionContext.execute_aroundBody0(HttpExecutionContext.scala:32) ~[na:na]
+	at play.core.j.HttpExecutionContext.execute_aroundBody1$advice(HttpExecutionContext.scala:133) ~[na:na]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:1) ~[na:na]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[na:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[na:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[na:na]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[na:na]
+	at scala.Option.map(Option.scala:145) [na:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[na:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[na:na]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [na:na]
+	... 7 common frames omitted
+
+2014-11-16 12:14:37,426 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6k8426mhe - Internal server error, for (GET) [/blog?category=1] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value invalidSearch is not a member of object controllers.security.Security]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:234) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:229) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:229) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:89) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-11-16 12:16:00,780 - [INFO] - from play in play-internal-execution-context-44 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:16:00,862 - [INFO] - from play in play-internal-execution-context-44 
+Application started (Dev)
+
+2014-11-16 12:17:42,963 - [INFO] - from play in play-internal-execution-context-44 
+database [default] connected at jdbc:mysql://localhost/blogofprime
+
+2014-11-16 12:17:43,030 - [INFO] - from play in play-internal-execution-context-44 
 Application started (Dev)
 

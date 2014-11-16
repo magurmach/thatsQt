@@ -15,7 +15,9 @@ create table post (
   title                     varchar(255),
   post_date                 datetime,
   subtitle                  varchar(255),
+  summary                   varchar(255),
   postbody                  TEXT,
+  post_status               tinyint(1) default 0,
   category_id               integer,
   constraint pk_post primary key (id))
 ;

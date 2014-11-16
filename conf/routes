@@ -10,9 +10,7 @@ GET     /                           controllers.Home.index()
 
 # Blog Pages
 GET		/blog						controllers.blog.Home.home()
-GET		/post						controllers.blog.Home.showPost()
-GET		/writePost					controllers.blog.WriteAndSave.writePost()
-GET		/writePost					controllers.blog.WriteAndSave.savePost()
+GET		/post/:id					controllers.blog.Home.showPost(id:Int)
 
 # security
 GET		/signin						controllers.security.Security.loginPage()
@@ -20,9 +18,26 @@ POST	/requestSignIn				controllers.security.Security.verifyAndSignIn()
 
 #post
 GET		/writePost					controllers.blog.WriteAndSave.writePost()
+GET		/edit/:id					controllers.blog.WriteAndSave.editPost(id: Int)
 POST	/savePost					controllers.blog.WriteAndSave.savePost()
+POST	/saveExistingPost			controllers.blog.WriteAndSave.saveExisting()
+
+#CMS
+GET		/showAllPost				controllers.blog.PostPublish.showAllPost()
+GET		/deletePost/:id				controllers.blog.WriteAndSave.deletePost(id: Int)
+GET		/publish/:id				controllers.blog.PostPublish.publishPost(id: Int)
+GET		/preview/:id				controllers.blog.Home.showPost(id:Int)
+GET		/unpublish/:id				controllers.blog.PostPublish.unpublishPost(id: Int)
+
+GET 	/createCategory				controllers.blog.CategoryController.createCategory()
+POST	/saveCategory				controllers.blog.CategoryController.saveCategory()
+GET		/allCategory				controllers.blog.CategoryController.categoryList()
+GET		/editCategory/:id			controllers.blog.CategoryController.editCategory(id: Int)
+POST 	/saveExistingCategory		controllers.blog.CategoryController.saveExisting()
+GET		/deleteCategory/:id			controllers.blog.CategoryController.deleteCategory(id: Int)
 
 #invalid SignIn
 GET		/invalid/:email				controllers.security.Security.invalid(email : String)
+GET		/invalidRequest/:query		controllers.security.Security.invalidSearch(query : String)
 #error
 GET		/:text						controllers.Home.error(text : String)

@@ -36,4 +36,9 @@ public class Security extends Controller{
 	{
 		return ok(views.html.invalid.render(mail));
 	}
+	
+	public static Result invalidSearch(String query)
+	{
+		return ok(views.html.invalidRequest.render(query));
+	}
 }

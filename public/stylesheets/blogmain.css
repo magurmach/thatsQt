@@ -980,6 +980,7 @@ ol li {
   color: #b6b6b6;
   font-size: 14px;
   font-size: 1.4rem;
+  cursor: default;
 }
 @media (min-width: 992px) {
   /* line 30, ../sass/partials/_shared.sass */

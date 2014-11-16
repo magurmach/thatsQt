@@ -4,7 +4,7 @@
 		module="play_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20141110000945"
+		publication="20141112221921"
 	>
 		<description>
 		play
@@ -42,6 +42,7 @@
 		<dependency org="com.typesafe.play" name="play_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.3.3" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-docs_2.11" rev="2.3.3" conf="docs->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="org.aspectj" name="aspectjweaver" rev="1.7.3" conf="echo-weave->default(compile)"/>
 		<dependency org="com.typesafe.trace" name="trace-sigar-libs" rev="0.1.6" conf="echo-sigar->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.3.3" conf="compile->default(compile)"/>
@@ -49,7 +50,6 @@
 		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jpa_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="filters-helpers_2.11" rev="2.3.3" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java_2.11" rev="2.3.3" conf="compile->default(compile)"/>
 		<dependency org="org.webjars" name="webjars-play_2.11" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-slick_2.11" rev="0.8.0" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.27" conf="compile->default(compile)"/>
